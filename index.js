@@ -16,5 +16,23 @@ function updateTime() {
   dubaiTimeElement.innerHTML = dubaiTime.format("LTS");
 }
 
+function updateCity(event) {
+  let cityTimeZone = event.target.value;
+  let cityTime = moment().tz(cityTimeZone);
+  let cityName = cityTimeZone.replace("_", " ").split("/")[1];
+  let changeTheCity = document.querySelector("#firstCity");
+  changeTheCity.innerHTML = `  
+  <div class="citiesExamples" id="warsaw">
+    <div class="CityAndDate">
+    <h2 class="city">${cityName}</h2>
+        <div class="date">${cityTime.format("dddd, MMMM Do YYYY")}</div>
+    </div>
+    <div class="time">${cityTime.format("LTS")}</div>
+    </div>`;
+}
+
 updateTime();
 setInterval(updateTime, 1000);
+
+let cityChange = document.querySelector("#citySelect");
+cityChange.addEventListener("change", updateCity);
