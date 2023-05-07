@@ -45,7 +45,7 @@ function updateCity(event) {
   changeTheCity.innerHTML = `  
   <div class="citiesExamples" id="warsaw">
     <div class="CityAndDate">
-    <h2 class="city">${cityName}</h2>
+    <h2 class="city">${cityName} ✈️</h2>
         <div class="date">${cityTime.format("dddd, MMMM Do YYYY")}</div>
     </div>
     <div class="time">${cityTime.format("LTS")}</div>
