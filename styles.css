@@ -22,6 +22,7 @@ select {
   margin: 5px;
   font-size: 18px;
   opacity: 0.8;
+  margin-top: 20px;
 }
 
 footer {
@@ -48,6 +49,15 @@ footer {
   padding: 30px 8px;
   border-bottom: 1px dotted #bd8e7d;
   color: #4b362d;
+}
+
+.currentDisplay {
+  display: flex;
+  margin: 0 auto;
+  color: #4b362d;
+}
+.CityAndDate {
+  margin-right: 30px;
 }
 
 .date {
