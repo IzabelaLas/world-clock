@@ -43,7 +43,7 @@ function updateCity(event) {
   let cityName = cityTimeZone.replace("_", " ").split("/")[1];
   let changeTheCity = document.querySelector("#firstCity");
   changeTheCity.innerHTML = `  
-  <div class="citiesExamples" id="warsaw">
+  <div class="citiesExamples">
     <div class="CityAndDate">
     <h2 class="city">${cityName} ✈️</h2>
         <div class="date">${cityTime.format("dddd, MMMM Do YYYY")}</div>
